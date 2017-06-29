@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<title>SoulArts Corporation - Chat</title>
+		<!--
+		<link rel="stylesheet" href="src/css/style.css">
+		-->
+		<link rel="stylesheet" href="src/css/icon.css">
+		<link rel="stylesheet" href="src/css/emoji.css">
+		
+	<link rel="stylesheet" href="_assets/css/style.main.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:300italic' rel='stylesheet' type='text/css'>
+	<script src="_assets/js/jquery.js"></script>
+	<script src="_assets/js/jquery.cookie.js"></script>
+	<script src="_assets/js/socket.io.js"></script>
+	<script src="_assets/js/slimscroll.js"></script>
+	<script src="_assets/js/moment.js"></script>
+	<script src="_assets/js/livestamp.js"></script>
+	<script>
+	var userCookie = $.cookie("accessUser");
+	
+	$( document ).ready(function() {
+	console.log('Welcome to SoulArts Corporation - soularts.co, SoulArts 2017 - copyright ! Lore Chat');
+		$("#userField").val(userCookie);
+		$(".avatar-title").text(userCookie);
+		$(".avatar-picture").attr("src","_assets/images/" + userCookie + ".jpg");
+		$("#WelcomeText").html( "<span class='desc-welcome'><font color='red' size='30'>LoreChat</font><br>Welcome " + userCookie + " press ENTER to continue.</span>");
+	});
+	</script>
+		
+	</head>
+	<body>
+
+	<ul class="pages">
+		<li class="login page">
+			<div class="form">
+				<div id="WelcomeText" class="title"></div>
+				<input id="userField" class="usernameInput" type="hidden" maxlength="14" value="" disabled="disabled"  />
+			</div>
+		</li>
+
+	<div class="container">
+ <div id="user-avatar">
+ 	<span class="avatar-border"></span>
+ 	<img  class="avatar-picture" src="">
+ 	<span class="avatar-title"></span>
+ </div>
+ 
+	<div id="chat-body">
+
+		<div class="chat-holder">
+			<div class="names-holder">
+				<ul class="names-list">
+
+				</ul>
+			</div>
+
+			<div id ="message-holder" class="message-holder">
+				<ul id="messages" class="messages"></ul>	
+			</div>
+			<div id="emote-box" class="emote-box">
+			<div class="smileys"></div>
+			</div>
+			
+			<a class="profile-config" href=""></a>
+			
+			
+				<input id="content-text-max" type="text" list="smiley" class="message-box" maxlength="240" placeholder="Type your message">
+				<button id="send-msg" type="submit" class="message-send">Send</button>
+			
+		</div>
+	</div>
+	<div class="chat-background"></div>
+</div>
+			<a class="param-room"></a>
+			<script src="src/js/client.js"></script>
+
+</body>
+</html>
+
+
+

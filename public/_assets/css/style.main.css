@@ -1,0 +1,374 @@
+#chat-body {
+	position: relative;
+  	background: url('../images/main_sprites.png') no-repeat -492px -354px;
+	width: 666px;
+	height: 380px;
+	z-index: 2;
+}
+
+input:focus{outline:none;}
+
+ul {list-style-type: none;}
+@font-face {
+    font-family: fontA;
+    src:url(../fonts/CapitalisTypOasis.ttf);
+}
+
+@font-face {
+    font-family: fontB;
+    src:url(../fonts/Cinzel-Bold.ttf);
+}
+
+@font-face {
+    font-family: fontC;
+    src:url(../fonts/Cinzel-Regular.ttf);
+}
+
+.names-holder {
+  position: relative;
+  display: block;
+  top: 42px;
+  width: 154px;
+  height: 299px;
+  background: url('../images/main_sprites.png') no-repeat -318px -4px;
+  margin: 0px 0px 0px 21px;
+}
+
+.chat-background {
+  position: relative;
+  display: block;
+  background: url('../images/main_sprites.png') no-repeat -483px -5px;
+  width: 484px;
+  height: 334px;
+  margin: -356px 0px 0px 158px;
+  z-index: 1;
+}
+
+.message-holder {
+	display: block;
+	background: url('../images/main_sprites.png') no-repeat -48px -315px;
+	width: 425px;
+	height: 238px;
+	margin: -260px 0px 0px 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.messages {
+	position: relative;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	margin: 2px 0px 0px -30px;
+}
+
+.emote-box {
+	display: block;
+	width: 320px;
+	height: 26px;
+	margin: 10px 0px 0px 215px;
+}
+
+.devil {
+	display: inline-block;
+	background: url('../images/main_sprites.png') no-repeat -147px -278px;
+	width: 23px;
+	height: 26px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.star {
+	display: inline-block;
+	background: url('../images/main_sprites.png') no-repeat -145px -176px;
+	width: 25px;
+	height: 26px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.quest {
+	display: inline-block;
+	background: url('../images/main_sprites.png') no-repeat -146px -209px;
+	width: 24px;
+	height: 26px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.pvp {
+	display: inline-block;
+	background: url('../images/main_sprites.png') no-repeat -145px -242px;
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.map {
+	display: inline-block;
+	background: url('../images/main_sprites.png') no-repeat -184px -211px;
+	width: 23px;
+	height: 22px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.health {
+	display: inline-block;
+	background: url('../images/main_sprites.png') no-repeat -184px -238px;
+	width: 25px;
+	height: 26px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.ruby {
+	display: inline-block;
+	background: url('../images/main_sprites.png') no-repeat -183px -179px;
+	width: 25px;
+	height: 23px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.diamond {
+	display: inline-block;
+	background: url('../images/main_sprites.png') no-repeat -213px -239px;
+	width: 26px;
+	height: 23px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.sapphire {
+	display: inline-block;
+	background: url('../images/main_sprites.png') no-repeat -216px -178px;
+	width: 22px;
+	height: 25px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.names-list {
+	position: relative;
+	top: 5px;
+}
+
+.message-box {
+	position: relative;
+	display: block;
+	z-index: 1;
+	background: url('../images/main_sprites.png') no-repeat -48px -568px;
+	width: 353px;
+	height: 23px;
+	color: #fff;
+	border: 0 none;
+    outline: 0;
+	padding: 0px 15px 0px 5px;
+	margin: 6px 0px 0px 195px;
+}
+
+.message-send {
+	position: relative;
+	display: block;
+	z-index: 2;
+	background: url('../images/main_sprites.png') no-repeat -48px -276px;
+	width: 84px;
+	height: 27px;
+	border: 0 none;
+    outline: 0;
+	color: #FFF;
+	font-size: 18px;
+	font-family: fontA;
+	text-align: center;
+	margin: -26px 0px 0px 540px;
+	padding: 2px 0px 0px 0px;
+	cursor: pointer;
+}
+
+.profile-config {
+	display: block;
+	background: url('../images/main_sprites.png') no-repeat -180px -266px;
+	width: 49px;
+	height: 38px;
+	margin: -34px 0px 0px 550px;
+	cursor: pointer;
+}
+
+.text-config {
+	display: inline-block;
+	background: url('../images/main_sprites.png') no-repeat -180px -266px;
+	width: 49px;
+	height: 38px;
+	margin: 0px 0px 0px 0px;
+	cursor: pointer;
+}
+
+#user-avatar {
+	position: relative;
+	display: block;
+	top: 40px;
+	margin: -45px 0px 0px 320px;
+}
+
+.avatar-border {
+  position: relative;
+  display: block;
+  background: url('../images/main_sprites.png') no-repeat -201px -63px;
+  width: 76px;
+  height: 76px;
+  margin: 0px 0px 0px 41px;
+  z-index: 2;
+}
+
+.avatar-picture {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  margin: -71px 0px 0px 46px;
+  z-index: 1;
+}
+
+.avatar-title {
+  position: relative;
+  display: block;
+  background: url('../images/main_sprites.png') no-repeat -2px -4px;
+  width: 158px;
+  height: 25px;
+  margin: -20px 0px 0px 0px;
+  padding: 14px 0px 0px 0px;
+  z-index: 3;
+  text-align: center;
+  font-family: fontA;
+  font-size: 10px;
+  color:rgba(255,255,255,1.00);
+}
+
+#WelcomeText {
+	z-index:999;
+	margin-top:30px;
+	margin-left:-48px;
+	position: absolute;
+	width:738px;
+	height: 460px;
+	border-radius: 15px;
+	background: rgba(0, 0, 0, 0.9); 
+	border-style: solid;
+	border-color: gold;
+}
+
+.param-room{
+	position: relative; 
+	z-index:8330;
+	top:-333px;
+	left: 490px;
+	display: block;
+	font-family: fontB;
+	font-size: 10px;
+	color: rgb(255, 168, 0); 
+	width: 140px;	
+}
+
+.desc-welcome {
+	position: relative;
+	top: -70px;
+	left: -75px;
+	display: block;
+	text-align:center;
+	color:rgba(255,198,0,1.00);
+	font-family: fontA;
+	font-size: 25px;
+	margin: 250px 0px 0px 150px;
+}
+.user-select {
+  position: relative;
+  display: block;
+  font-family: fontA;
+  font-size: 12px;
+  color: rgb(255, 168, 0);
+  width: 140px;
+  left: -33px;
+}
+
+.default-icon {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+}
+.private-msg {
+	position:relative;
+	top: -16px;
+    left: 255px;
+    color: #ff00bf;
+    font-size: 11px;
+}
+#user-message {
+	width: 406px;
+}
+
+.avatar-bd-text {
+	position: relative;
+	display: block;
+	z-index: 2;
+	background: url('../images/main_sprites.png') no-repeat -217px -4px;
+	width: 44px;
+	height: 44px;
+}
+
+.username-title {
+	font-family: fontA;
+	font-size: 12px;
+	color: rgba(255,198,0,1.00);
+	margin: -83px 0px 0px 50px;
+	width: 200px;	
+}
+
+.date-title {
+	display: block;
+	font-family: fontD;
+	font-size: 8px;
+	color:rgba(192,192,192,1.00);
+	margin: -11px 0px 0px 290px;
+	width: 130px;
+	text-align: center;
+}
+
+.vip-player {
+	position: relative;
+	display: inline-block;
+	background: url('../images/main_sprites.png') no-repeat -239px -285px;
+	width: 34px;
+	height: 12px;
+	top: 1px;
+	margin: 0px 0px 0px 4px;
+}
+
+.main-text {
+	font-size: 13px; 
+	margin: 4px 0px 0px 54px;
+	width: 340px;
+	color: #fff;
+	overflow: hidden;
+	word-wrap: break-word;
+	min-height: 30px;
+}
+
+.main-text-state {
+	position: relative;
+	top: -15px;
+}
+
+.avatar-text {
+	position: relative;
+	z-index: 1;
+	top: -41px;
+	left: 3px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+}
+
+.vip {top: 5px;margin-right: 3px; background: url('../images/main_sprites.png') no-repeat -283px -282px;}

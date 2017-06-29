@@ -1,0 +1,342 @@
+
+
+.select-smiley:hover{
+	background-color: rgba(0,0,0,0.1);
+}
+
+.select-smiley:active, .select-smiley:focus{
+	background-color: rgba(0,0,0,0.2);
+}
+
+.em{
+	position: relative;
+	display: inline-block;
+
+	width: 32px;
+	height: 32px;
+
+	background: url("../img/emoji.png");
+	background-repeat: no-repeat;
+}
+
+//Line 1
+.em.em-smile{
+	background-position: 0px 0px;
+}
+
+.em.em-smiley{
+	background-position: -32px 0px;
+}
+
+.em.em-grinning{
+	background-position: -64px 0px;
+}
+
+.em.em-relaxed{
+	background-position: -96px 0px;
+}
+
+.em.em-wink{
+	background-position: -128px 0px;
+}
+
+.em.em-kissing{
+	background-position: -160px 0px;
+}
+
+.em.em-confounded{
+	background-position: -192px 0px;
+}
+
+.em.em-confused{
+	background-position: -224px 0px;
+}
+
+.em.em-pensive{
+	background-position: -256px 0px;
+}
+
+.em.em-sweat{
+	background-position: -288px 0px;
+}
+
+.em.em-unamused{
+	background-position: -320px 0px;
+}
+
+.em.em-expressionless{
+	background-position: -352px 0px;
+}
+
+.em.em-neutral_face{
+	background-position: -384px 0px;
+}
+
+
+.em.em-kissing_heart{
+	background-position: 0px -32px;
+}
+
+.em.em-wink{
+	background-position: -32px -32px;
+}
+
+.em.em-worried{
+	background-position: -64px -32px;
+}
+
+.em.em-innocent{
+	background-position: -96px -32px;
+}
+
+.em.em-laughing{
+	background-position: -128px -32px;
+}
+
+.em.em-sweat_smile{
+	background-position: -160px -32px;
+}
+
+.em.em-joy{
+	background-position: -192px -32px;
+}
+
+.em.em-grin{
+	background-position: -224px -32px;
+}
+
+.em.em-flushed{
+	background-position: -256px -32px;
+}
+
+.em.em-sleeping{
+	background-position: -288px -32px;
+}
+
+.em.em-astonished{
+	background-position: -320px -32px;
+}
+
+.em.em-scream{
+	background-position: -352px -32px;
+}
+
+.em.em-sob{
+	background-position: -384px -32px;
+}
+
+
+.em.em-cold_sweat{
+	background-position: 0px -64px;
+}
+
+.em.em-rage{
+	background-position: -32px -64px;
+}
+
+.em.em-anguished{
+	background-position: -64px -64px;
+}
+
+.em.em-frowning{
+	background-position: -96px -64px;
+}
+
+.em.em-disappointed_relieved{
+	background-position: -128px -64px;
+}
+
+.em.em-triumph{
+	background-position: -160px -64px;
+}
+
+.em.em-persevere{
+	background-position: -192px -64px;
+}
+
+.em.em-cry{
+	background-position: -224px -64px;
+}
+
+.em.em-kissing_smiling_eyes{
+	background-position: -256px -64px;
+}
+
+.em.em-angry{
+	background-position: -288px -64px;
+}
+
+.em.em-no_mouth{
+	background-position: -320px -64px;
+}
+
+.em.em-dizzy_face{
+	background-position: -352px -64px;
+}
+
+.em.em-stuck_out_tongue_closed_eyes{
+	background-position: -384px -64px;
+}
+
+
+.em.em-mask{
+	background-position: 0px -96px;
+}
+
+.em.em-stuck_out_tongue_winking_eye{
+	background-position: -32px -96px;
+}
+
+.em.em-weary{
+	background-position: -64px -96px;
+}
+
+.em.em-stuck_out_tongue{
+	background-position: -96px -96px;
+}
+
+.em.em-kissing_closed_eyes{
+	background-position: -128px -96px;
+}
+
+.em.em-smirk{
+	background-position: -160px -96px;
+}
+
+.em.em-sunglasses{
+	background-position: -192px -96px;
+}
+
+.em.em-smiling_imp{
+	background-position: -224px -96px;
+}
+
+.em.em-lilith{
+	background-position: -192px -96px;
+}
+
+.em.em-heart_eyes{
+	background-position: -256px -96px;
+}
+
+.em.em-relieved{
+	background-position: -288px -96px;
+}
+
+.em.em-yum{
+	background-position: -320px -96px;
+}
+
+.em.em-blush{
+	background-position: -352px -96px;
+}
+
+.em.em-grimacing{
+	background-position: -384px -96px;
+}
+
+
+.em.em-imp{
+	background-position: 0px -128px;
+}
+
+.em.em-alien{
+	background-position: -32px -128px;
+}
+
+.em.em-japanese_goblin{
+	background-position: -64px -128px;
+}
+
+.em.em-cop{
+	background-position: -96px -128px;
+}
+
+.em.em-open_mouth{
+	background-position: -128px -128px;
+}
+
+.em.em-hushed{
+	background-position: -160px -128px;
+}
+
+.em.em-disappointed{
+	background-position: -192px -128px;
+}
+
+.em.em-sleepy{
+	background-position: -224px -128px;
+}
+
+.em.em-tired_face{
+	background-position: -256px -128px;
+}
+
+.em.em-person_with_blond_hair{
+	background-position: -288px -128px;
+}
+
+.em.em-man_with_gua_pi_mao{
+	background-position: -320px -128px;
+}
+
+.em.em-man_with_turban{
+	background-position: -352px -128px;
+}
+
+.em.em-older_man{
+	background-position: -384px -128px;
+}
+
+
+.em.em-older_woman{
+	background-position: 0px -160px;
+}
+
+.em.em-baby{
+	background-position: -32px -160px;
+}
+
+.em.em-construction_worker{
+	background-position: -64px -160px;
+}
+
+.em.em-princess{
+	background-position: -96px -160px;
+}
+
+.em.em-boy{
+	background-position: -128px -160px;
+}
+
+.em.em-girl{
+	background-position: -160px -160px;
+}
+
+.em.em-man{
+	background-position: -192px -160px;
+}
+
+.em.em-woman{
+	background-position: -224px -160px;
+}
+
+.em.em-scream_cat{
+	background-position: -256px -160px;
+}
+
+.em.em-joy_cat{
+	background-position: -288px -160px;
+}
+
+.em.em-smile_cat{
+	background-position: -320px -160px;
+}
+
+.em.em-heart_eyes_cat{
+	background-position: -352px -160px;
+}
+
+.em.em-smirk_cat{
+	background-position: -384px -160px;
+}

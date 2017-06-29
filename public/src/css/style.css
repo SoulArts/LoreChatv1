@@ -1,0 +1,423 @@
+/*********************/
+/*       DEFAULT     */
+/*********************/
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+
+  font-size: 15px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+a {
+	text-decoration: none;
+	color: #e74c3c;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+	color: #F3734F;
+}
+
+.includeJS{
+  display: none;
+}
+/**********************/
+/*         PAGES      */
+/**********************/
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/*********************/
+/*     LOGIN PAGE    */
+/*********************/
+
+.login.page {
+  background-color: #000;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.login.page .form .usernameInput{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 50%;
+}
+
+.login.page .title {
+  font-size: 200%;
+}
+
+.login.page .usernameInput{
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+
+.login.page .title, .login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+}
+
+/*********************/
+/*      CHAT PAGE    */
+/*********************/
+
+.chat.page {
+  display: none;
+}
+
+/* Font */
+
+.messages {
+  font-size: 130%;
+}
+
+.inputMessage {
+  font-size: 100%;
+}
+
+.log {
+  color: gray;
+  font-size: 70%;
+  margin: 5px;
+  text-align: center;
+}
+
+/*********************/
+/*      MESSAGES     */
+/*********************/
+
+.chatArea {
+  height: 100%;
+  padding-bottom: 60px;
+
+  background-color: #006666;
+}
+
+.messages {
+  height: 90%;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 10px 20px 10px 20px;
+
+  color: white;
+}
+
+.msg *{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.msg.alter{
+  background-color: #111;
+}
+
+.msg.mention{
+  background-color: #008;
+}
+
+.msg .from{
+  display: inline-block;
+
+  margin-right: 10px;
+
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.msg .message {
+  display: inline;
+
+  width: 100%;
+}
+
+.msg .message .deleted{
+    color: red;
+    font-size: 60%;
+
+    vertical-align: middle;
+}
+
+.username{
+  cursor: pointer;
+}
+
+.from .username{
+  padding: 0px 5px 0px 5px;
+}
+
+.username.rm-default{
+  color: white;
+}
+.username.rm-moderator{
+  color: orange;
+}
+.username.rm-admin{
+  color: red;
+}
+.username.rm-server{
+  color: green;
+}
+
+/* Date Div */
+.timestamp{
+    color: gray;
+    font-size: 40%;
+
+    margin-left:10px;
+}
+
+/* images */
+
+.msg .text img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/*********************/
+/*        BUT     */
+/*********************/
+
+.but{
+  cursor: pointer;
+}
+
+.but:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Moderation Buton */
+.but-moderation{
+  font-size: 50%;
+
+  margin-left:10px;
+  padding: 0px 2px 0px 2px;
+
+  border-radius: 2px;
+
+  background-color: #AA0000;
+
+}
+
+/* param Buton */
+.but-param{
+  position: fixed;
+
+  left: 0px;
+  top: 0px;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: #111;
+}
+
+.but-param *{
+  position: fixed !important;
+  margin: 5px;
+}
+
+/* Smiley Button */
+.but-smiley {
+  position: fixed;
+
+  right: 52px;
+  bottom: 8%;
+
+  width: 32px;
+  height: 32px;
+}
+
+.but-smiley *{
+  position: fixed !important;
+}
+
+/* send message Buton */
+.but-send_message{
+  position: fixed;
+
+  right: 10px;
+  bottom: 8%;
+
+  width: 30px;
+  height: 30px;
+
+}
+
+.but-send_message *{
+  position: fixed !important;
+}
+
+/*********************/
+/*     PARAMETER     */
+/*********************/
+
+.parameterHtml{
+  margin-left: 10px;
+  text-align: left;
+}
+
+.parameterHtml div{
+  padding: 3px;
+}
+
+.parameterHtml label{
+  display: inline-block;
+  width: 100px;
+
+  font-weight: bold;
+}
+
+.parameterHtml span{
+  display: inline-block;
+  width: 100px;
+}
+
+.parameterHtml .param-input[type=submit], .parameterHtml .param-input[type=color]{
+  border: 3px outset #e74c3c;
+  border-radius: 3px;
+
+  background-color: #e74c3c;
+
+  font-size: 12px;
+}
+
+.parameterHtml .param-input[type=submit]:active, .parameterHtml .param-input[type=color]:active{
+  border-style: inset;
+}
+
+/* Bouton de couleur */
+.param-input.change-color{
+  margin: -4px 0px 0px -4px;
+
+  width: 30px;
+  height: 30px;
+
+  border: none !important;
+
+  background-color: #FFF !important;
+}
+
+/* Bouton de son */
+.param-input.change-sound{
+  width: 20px;
+  height: 20px;
+
+  color: transparent;
+  border: none !important;
+}
+.param-input.change-sound[value=true]{
+  background-color: green;
+}
+.param-input.change-sound[value=false]{
+  background-color: red;
+}
+
+/* room */
+.param-room {
+  position: fixed;
+
+  top: 10px;
+  right: 30px;
+
+  border: 3px outset #e74c3c;
+  border-radius: 3px;
+
+  background-color: #e74c3c;
+}
+
+/*********************/
+/*       NOTIF       */
+/*********************/
+
+.invitation-speech{
+  margin: 10px 0px 10px 0px;
+}
+
+/*********************/
+/*        INPUT      */
+/*********************/
+.inputMessage {
+  position:absolute;
+  display: inline-block;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding-left: 10px;
+
+  height: 8%;
+  min-height: 40px;
+  width: 100%;
+
+  border: 10px solid #000;
+  outline: none;
+}
+
+/*********************/
+/*     Code Popup    */
+/*********************/
+
+.codeHtml .code-textarea{
+  width: 100%;
+  min-height: 100px;
+}
+
+.codeHtml .code-submit{
+  border: 3px outset #e74c3c;
+  border-radius: 3px;
+
+  background-color: #e74c3c;
+
+  font-size: 12px;
+}
+
+.codeHtml .code-submit:active{
+  border-style: inset;
+}
